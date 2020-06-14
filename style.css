@@ -5,3 +5,19 @@
     height: 300px;
     margin: 0 auto;
 }
+
+#line-canvas {
+    border: 1px solid black;
+    display: block;
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+#complex-lines {
+    border: 1px solid black;
+    display: block;
+    width: 600px;
+    height: 300px;
+    margin: 1rem auto;
+}
