@@ -7,6 +7,9 @@ window.onload = function () {
     const canvas2 = document.getElementById("complex-lines");
     const context2 = canvas2.getContext("2d");
 
+    const canvas3 = document.getElementById("line-caps");
+    const context3 = canvas3.getContext("2d");
+
     // draw line steps
     context.beginPath(); //reset the context state
     context.strokeStyle = "red"; // colour of the line
@@ -45,4 +48,36 @@ window.onload = function () {
     context2.lineTo(180, 80);
     context2.lineTo(230, 30);
     context2.stroke();
+
+    // Line Caps -> context.lineCap = '';
+    // - butt -> default
+    // - round
+    // - square
+
+    // first line
+    context3.beginPath();
+    context3.lineCap = "butt";
+    context3.strokeStyle = "red";
+    context3.lineWidth = 10;
+    context3.moveTo(70, 50);
+    context3.lineTo(160, 50);
+    context3.stroke();
+
+    // second line
+    context3.beginPath();
+    context3.lineCap = "round";
+    context3.strokeStyle = "blue";
+    context3.lineWidth = 10;
+    context3.moveTo(70, 75);
+    context3.lineTo(160, 75);
+    context3.stroke();
+
+    // third line
+    context3.beginPath();
+    context3.lineCap = "square";
+    context3.strokeStyle = "green";
+    context3.lineWidth = 10;
+    context3.moveTo(70, 100);
+    context3.lineTo(160, 100);
+    context3.stroke();
 }

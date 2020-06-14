@@ -21,3 +21,11 @@
     height: 300px;
     margin: 1rem auto;
 }
+
+#line-caps {
+    border: 1px solid black;
+    display: block;
+    width: 600px;
+    height: 300px;
+    margin: 1rem auto;
+}
